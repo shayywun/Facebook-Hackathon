@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="foundation/css/foundation.css"/>
+<script src ="foundation/js/vendor/modernizr.js"></script>
+<style>
+ body{
+	 background-image:url(bokeh.jpg);
+	 background-repeat:no-repeat;
+	 background-position: center center;
+	 background-size:cover;
+ }
+ h1{
+	 color:white;
+	 text-shadow: 1px 1px 3px grey; 
+ }
+ input[type="submit"]{
+	 background-color:#75778C;
+	 color:black;
+ }
+ div.panel{
+	 background-color:#8EBFE2;
+ }
+	 
+</style>
+</head>
+<body>
+<div class="row">
+	<div class="small-12 columns">
+    	<h1>Welcome to BudgIt</h1>
+    </div>
+</div>
+<div class="row">
+	<div class="large-12 medium-8 columns">
+    	<div class="panel">
+        	<h3>Are you stoked to try BudgIt?</h3>
+            <p> To get going, this file (about.html) includes everything you need to know about BudgIt</p>
+  			<div class="row">
+             	<div class="large-4 medium-4 columns">     
+					<form action="signedup2.php" method="post">
+					House Name/Username: <input type="text" name="householdname">
+					Password: <input type="password" name="password">
+					Number of Occupants: <input type="text" name="numberofpeople">
+					<input type="submit">
+					</form>
+				</div>
+            </div>
+         </div>
+       </div>
+  </div>          
+<script src = "foundation/js/vendor/jquery.js"></script>
+<script src = "foundation/js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
